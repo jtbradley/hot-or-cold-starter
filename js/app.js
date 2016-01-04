@@ -32,6 +32,8 @@ $(document).ready(function(){
 
   		if (userNum == randInt) {
   			alert("CONGRATULATIONS!! YOU WIN! YOU ARE ULTIMATE HOTTIE!!!! ;)");
+  			//refresh page after winning
+  			location.reload();
   		}
   		else if (Math.abs(numDiff)<= 3) {
   			alert("You are practically on FIRE!!!!!");
