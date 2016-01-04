@@ -15,7 +15,6 @@ $(document).ready(function(){
   	var randInt; // make accessible in global context
   	function getRandom(min, max) { // (min = included, max =excluded)
   		randInt= Math.abs(Math.floor(Math.random() * (min - max)) + min);
-  		console.log(randInt);
   		return(randInt);
   	};
 
@@ -25,13 +24,13 @@ $(document).ready(function(){
   	$( "#mainForm" ).submit(function() {
   		
   		event.preventDefault();
-  		userNum = document.getElementById('userGuess').value; 
-  		console.log(userNum);	
+  		userNum = document.getElementById('userGuess').value; 	
 
   		var numDiff = userNum - randInt; // the difference	
 
   		if (userNum == randInt) {
   			alert("CONGRATULATIONS!! YOU WIN! YOU ARE ULTIMATE HOTTIE!!!! ;)");
+  			location.reload();
   		}
   		else if (Math.abs(numDiff)<= 3) {
   			alert("You are practically on FIRE!!!!!");
