@@ -15,7 +15,6 @@ $(document).ready(function(){
   	var randInt; // make accessible in global context
   	function getRandom(min, max) { // (min = included, max =excluded)
   		randInt= Math.abs(Math.floor(Math.random() * (min - max)) + min);
-  		console.log(randInt);
   		return(randInt);
   	};
 
